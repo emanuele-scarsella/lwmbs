@@ -238,7 +238,7 @@
             }
         },
         "icu": {
-            "type": "ghrel",
+            "type": "ghasset",
             "repo": "unicode-org/icu",
             "match": "icu4c.+-src\\.tgz",
             "license": {
