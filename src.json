@@ -236,6 +236,15 @@
                 "type": "file",
                 "path": "LICENSE"
             }
+        },
+        "icu": {
+            "type": "ghrel",
+            "repo": "unicode-org/icu",
+            "match": "icu4c.+-src\\.tgz",
+            "license": {
+                "type": "file",
+                "path": "LICENSE"
+            }
         }
     },
     "exts": {
@@ -717,6 +726,9 @@
         "zstd": {
             "source": "zstd",
             "libDeps": []
+        },
+        "icu": {
+            "source": "icu"
         }
     },
     "size": {
