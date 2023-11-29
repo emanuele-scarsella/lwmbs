@@ -42,9 +42,6 @@ class Libicu extends Library
     {
         Log::i("building {$this->name}");
         $ret = 0;
-        $cppflags = 'CPPFLAGS="-DU_CHARSET_IS_UTF8=1  -DU_USING_ICU_NAMESPACE=1  -DU_STATIC_IMPLEMENTATION=1"';
-        $cxxflags = 'CXXFLAGS="-std=c++11"';
-        $ldflags = 'LDFLAGS="-static"';
         passthru(
             "cd {$this->sourceDir}/source && " .
                 "{$this->config->configureEnv} " .
