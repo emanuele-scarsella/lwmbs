@@ -47,7 +47,7 @@ class Libicu extends Library
         $ldflags = 'LDFLAGS="-static"';
         passthru(
             $this->config->setX . ' && ' .
-                "cd {$this->sourceDir} && " .
+                "cd {$this->sourceDir}/source && " .
                 "{$this->config->configureEnv} " .
                 "{$cppflags} {$cxxflags} {$ldflags} " .
                 ' ./runConfigureICU Linux ' .

@@ -21,7 +21,7 @@ declare(strict_types=1);
 
 class Libicu extends Library
 {
-    use LinuxLibraryTrait;
+    use MacOSLibraryTrait;
     protected string $name = 'icu';
     protected array $depNames = [];
     protected array $staticLibs = [
@@ -47,7 +47,7 @@ class Libicu extends Library
         $ldflags = 'LDFLAGS="-static"';
         passthru(
             $this->config->setX . ' && ' .
-                "cd {$this->sourceDir} && " .
+                "cd {$this->sourceDir}/source && " .
                 "{$this->config->configureEnv} " .
                 ' ./runConfigureICU MacOSX ' .
                 '--enable-static ' .
