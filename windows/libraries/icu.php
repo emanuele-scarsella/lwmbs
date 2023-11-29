@@ -44,7 +44,7 @@ class Libicu extends Library
         $ret = 0;
         passthru(
             "cd {$this->sourceDir}/source && " .
-                "{$this->config->configureEnv} " .
+                // "{$this->config->configureEnv} " .
                 ' ./runConfigureICU Cygwin ' .
                 '--enable-static ' .
                 '--disable-shared ' .
