@@ -391,9 +391,7 @@
         },
         "intl": {
             "source": "php",
-            "libDeps": {
-                "icu": true
-            }
+            "libDeps": []
         },
         "ldap": {
             "source": "php",
