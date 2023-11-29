@@ -46,8 +46,7 @@ class Libicu extends Library
         $cxxflags = 'CXXFLAGS="-std=c++11"';
         $ldflags = 'LDFLAGS="-static"';
         passthru(
-            $this->config->setX . ' && ' .
-                "cd {$this->sourceDir}/source && " .
+            "cd {$this->sourceDir}/source && " .
                 "{$this->config->configureEnv} " .
                 ' ./runConfigureICU Cygwin ' .
                 '--enable-static ' .
