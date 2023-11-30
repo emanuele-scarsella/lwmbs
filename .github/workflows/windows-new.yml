@@ -536,10 +536,10 @@ jobs:
       #   uses: mxschmitt/action-tmate@v3
 
       - name: Configure MSVC for icu compilation
-        uses: ilammy/msvc-dev-cmd@v1.12
+        uses: ilammy/msvc-dev-cmd@v1
 
       - name: Configure MSYS for icu compilation
-        uses: msys2/setup-msys2@v2.21
+        uses: msys2/setup-msys2@v2
 
       - name: Build
         shell: pwsh
