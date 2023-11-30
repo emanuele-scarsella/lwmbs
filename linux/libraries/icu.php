@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright (c) 2022 Yun Dou <dixyes@gmail.com>
+ * Copyright (c) 2022 Emanuele Scarsella <emascars@gmail.com>
  *
  * lwmbs is licensed under Mulan PSL v2. You can use this
  * software according to the terms and conditions of the
@@ -30,11 +30,6 @@ class Libicu extends Library
         "libicuuc.a",
         "libicudata.a"
     ];
-
-
-
-
-
     protected array $headers = [];
     protected array $pkgconfs = [];
 
