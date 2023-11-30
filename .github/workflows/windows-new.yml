@@ -540,6 +540,9 @@ jobs:
 
       - name: Configure MSYS for icu compilation
         uses: msys2/setup-msys2@v2
+      
+      - name: Set up Cygwin for icu compilation
+        uses: egor-tensin/setup-cygwin@v4
 
       - name: Build
         shell: pwsh
