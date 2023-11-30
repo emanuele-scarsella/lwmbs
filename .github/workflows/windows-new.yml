@@ -535,6 +535,12 @@ jobs:
       # - name: Setup tmate session
       #   uses: mxschmitt/action-tmate@v3
 
+      - name: Configure MSVC for icu compilation
+        uses: ilammy/msvc-dev-cmd@v1.12
+
+      - name: Configure MSYS for icu compilation
+        uses: msys2/setup-msys2@v2.21
+
       - name: Build
         shell: pwsh
         run: |
